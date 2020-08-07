@@ -53,7 +53,7 @@ def parse_habr(base_url=base_url, headers=headers):
             for tag in tags_list:
                 name = tag.find('a', {'class': 'inline-list__item-link hub-link'}).text
                 tags_list_for_dict.append(name)
-            data['tags'].append(tags_list_for_dict)
+            data['tags'].append(','.join(tags_list_for_dict))
 
         # собираем словарь в объект pandas и возвращаем его
 
