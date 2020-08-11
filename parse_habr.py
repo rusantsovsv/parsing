@@ -127,3 +127,4 @@ con = sl.connect('db/parse_habr.db')
 res_df.to_sql('DATA_SCIENCE', con, if_exists='replace', index=False)
 
 # база для анализа готова!!
+safsf
