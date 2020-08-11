@@ -16,7 +16,8 @@ def create_table(name, connector=None):
                 title TEXT,
                 likes TEXT,
                 tags TEXT,
-                post_link TEXT        
+                post_link TEXT,
+                post_text TEXT        
             );    
         """)
 
