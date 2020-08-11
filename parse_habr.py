@@ -86,7 +86,7 @@ def parse_habr(base_url=base_url, headers=headers, num_page='0'):
     return pd.DataFrame.from_dict(data)
 
 
-# моздаем функцию для извлечения текста из поста
+# создаем функцию для извлечения текста из поста
 def get_text_from_link(link):
 
     headers = {'accept': '*/*',

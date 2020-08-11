@@ -4,7 +4,6 @@ import sqlite3 as sl
 # создадим соединение (оно создаст базу, если база не существует)
 con = sl.connect('db/parse_habr.db')
 
-
 # создаем таблицу для хранения данных по запросу
 def create_table(name, connector=None):
     with connector:
